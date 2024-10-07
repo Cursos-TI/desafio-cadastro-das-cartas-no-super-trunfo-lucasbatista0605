@@ -18,26 +18,3 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
-}
-#include <stdio.h>
-intmain(){
-    int código;
-    float área, pib;
-    char nome[60];
-
-printf("digite código da cidade; \n");
-scanf("%d", &código);
-
-printf("digite a área:, \n");
-scanf("%e", &área);
-
-printf("digite o pib:, \n");
-scanf("%e", &pib);
-
-printf("digite o nome:, \n");
-scanf("%s", &nome);
-
-printf("código da cidade: %d - área:%e", código,área);
-pritf("pib:%e - nome:%s", pib,nome); 
-
-}

@@ -1,21 +1,33 @@
+
 #include<stdio.h>
 int main(){
-     int código;
-     float área,Pib;
+     int codigo;
+     float area,Pib,densidadepopulacional,PIBpercapita,populacao;
      char nome[50];
 
      printf("digite código do país: \n");
-     scanf("%d", &código);
+     scanf("%d", &codigo);
 
      printf("digite a área: \n");
-     scanf("%e", &área);
+     scanf("%f", &area);
 
      printf("digite o pib: \n");
      scanf("%e", &Pib);
 
      printf("digite o nome: \n");
-     sacnf("%s", &nome);
+     scanf("%s", &nome);
 
-     printf("código do país: %d - área: %e",código,área);
+     printf("digite sua população: \n");
+     scanf("%f", &populacao);
+
+     densidadepopulacional= (area/populacao);
+     printf("sua densidade é: %f");
+ 
+     PIBpercapita= (Pib/populacao);
+     printf("seu PIB per capita é: %f");
+
+     printf("código do país: %d - área: %f",codigo,area);
      printf("pib: %e - nome:%s", Pib,nome);
+     printf("população: %f",populacao);
+     printf("densidadepopulacional:%f - PIB per capita:%f", densidadepopulacional,PIBpercapita);
 }

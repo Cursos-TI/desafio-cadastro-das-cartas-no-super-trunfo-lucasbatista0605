@@ -21,10 +21,8 @@ int main(){
      scanf("%f", &populacao);
 
      densidadepopulacional= (area/populacao);
-     printf("sua densidade é: %f");
  
-     PIBpercapita= (Pib/populacao);
-     printf("seu PIB per capita é: %f");
+     PIBpercapita= (Pib/populacao);   
 
      printf("código do país: %d - área: %f",codigo,area);
      printf("pib: %e - nome:%s", Pib,nome);
